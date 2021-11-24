@@ -1,0 +1,39 @@
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .section_titulo {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  section .section_titulo {
+    font-size: 30px;
+  }
+  section .section_imagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: auto;
+  }
+  section .imgUnisex img {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=mujeres.css.map */

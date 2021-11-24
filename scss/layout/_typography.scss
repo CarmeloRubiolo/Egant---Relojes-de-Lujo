@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro&family=Noto+Serif+Display:ital@1&display=swap");
+body {
+    background-image: linear-gradient(to top, grey, black, black);
+    color: $clr-primario;
+    font-family: $font-body;
+    h1 h2 h3 {
+    font-family: $font-encabezado;
+    color: $clr-primario;
+    }
+  }
+  
+  

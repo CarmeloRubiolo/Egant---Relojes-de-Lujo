@@ -1,0 +1,60 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px 0px 20px 0px;
+  img {
+    height: 16px;
+    width: 16px;
+  }
+  a {
+    font-size: 10px;
+    color: $clr-plata;
+    text-decoration: none;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+}
+.footer_btnWsp {
+  height: 26px;
+  width: 26px;
+  position: fixed;
+  right: ($espaciado/2)-10;
+  bottom: ($espaciado/2)-10;
+}
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+    img {
+      @include sizes(26px, 26px);
+      margin-left: ($espaciado/2);
+      margin-bottom: 10px;
+    }
+    a {
+      font-size: 13px;
+      color: $clr-plata;
+      text-decoration: none;
+    }
+    p {
+      font-size: 1rem;
+      margin-left: 50px;
+    }
+    .footer_btnWsp {
+      @include sizes(36px, 36px);
+      right: 30px;
+      bottom: 30px;
+    }
+  }
+}
+
+
