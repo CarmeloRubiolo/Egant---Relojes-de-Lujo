@@ -34,6 +34,7 @@ section .section_titulo {
   }
   section .imgUnisex img {
     width: 50%;
+    height: 30px;
   }
 }
 /*# sourceMappingURL=mujeres.css.map */
