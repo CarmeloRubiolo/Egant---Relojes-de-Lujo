@@ -86,20 +86,30 @@ header .header_nav ul li a:hover {
   text-decoration: underline;
 }
 
+@media (min-width: 1024px) {
+  header .header_logo {
+    margin: 2rem;
+    height: 70px;
+  }
+  header .header_nav ul {
+    word-spacing: 60px;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 20px 0px 20px 0px;
 }
 
@@ -111,10 +121,14 @@ footer img {
 footer a {
   font-size: 10px;
   color: #C5C5C3;
-  text-decoration: none;
+}
+
+footer a h3 {
+  text-decoration: underline;
 }
 
 footer p {
+  color: #C5C5C3;
   font-size: 0.7rem;
 }
 
@@ -131,10 +145,10 @@ footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -156,13 +170,23 @@ footer p {
   }
   footer p {
     font-size: 1rem;
-    margin-left: 50px;
+    margin-top: 20px;
   }
   footer .footer_btnWsp {
     height: 36px;
     width: 36px;
     right: 30px;
     bottom: 30px;
+    cursor: pointer;
+  }
+  footer .horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -178,12 +202,32 @@ body h1 h2 h3 {
   color: #D0A354;
 }
 
-main h1 {
+main section h1 {
+  font-size: 20px;
+}
+
+main section div p {
+  margin-top: 1rem;
+  text-transform: none;
+}
+
+@media (min-width: 768px) {
+  main section h1 {
+    font-size: 30px;
+  }
+}
+
+body {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(black));
+  background-image: linear-gradient(to top, black, black);
+}
+
+body main h1 {
   font-size: 1rem;
   margin: 40px;
 }
 
-main form {
+body main form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +241,7 @@ main form {
   text-align: center;
 }
 
-main form input {
+body main form input {
   margin: 5px;
 }
 
@@ -218,6 +262,12 @@ section .section_titulo {
   font-size: 20px;
 }
 
+section div h2 {
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   section .section_titulo {
     font-size: 30px;
@@ -235,9 +285,27 @@ section .section_titulo {
             align-items: center;
     overflow: auto;
   }
+  section .section_imagenes::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+  }
+  section .section_imagenes::-webkit-scrollbar-thumb {
+    background: #D0A354;
+  }
   section .imgUnisex img {
     width: 50%;
   }
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #C5C5C3;
+  border-radius: 5px;
 }
 
 .card-section h2 {
@@ -349,9 +417,17 @@ section .section_titulo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    overflow: auto;
+  }
+  section .section_imagenes::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+  }
+  section .section_imagenes::-webkit-scrollbar-thumb {
+    background: #D0A354;
+    border-radius: 5px;
   }
   section .imgUnisex img {
     width: 50%;
   }
 }
+/*# sourceMappingURL=main.css.map */

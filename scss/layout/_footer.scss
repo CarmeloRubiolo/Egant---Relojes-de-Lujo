@@ -1,8 +1,8 @@
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   margin: 20px 0px 20px 0px;
   img {
     height: 16px;
@@ -11,9 +11,13 @@ footer {
   a {
     font-size: 10px;
     color: $clr-plata;
-    text-decoration: none;
+    h3{
+      text-decoration: underline;
+    }
   }
+
   p {
+    color: $clr-plata;
     font-size: 0.7rem;
   }
 }
@@ -31,7 +35,7 @@ footer {
 @media (min-width: 768px) {
   footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 20px 0px 20px 0px;
@@ -47,14 +51,17 @@ footer {
     }
     p {
       font-size: 1rem;
-      margin-left: 50px;
+      margin-top: 20px
     }
     .footer_btnWsp {
       @include sizes(36px, 36px);
       right: 30px;
       bottom: 30px;
+      cursor: pointer;
+    }
+    .horizontal{
+      display: flex;
+      flex-direction: row;
     }
   }
 }
-
-

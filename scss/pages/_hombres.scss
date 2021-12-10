@@ -5,6 +5,13 @@ section {
   .section_titulo {
     font-size: 20px;
   }
+  div{
+    h2{
+      text-align: center;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -12,13 +19,21 @@ section {
       .section_titulo{
           font-size: 30px;
       }
-    .section_imagenes {
+    .section_imagenes{
       display: flex;
       flex-direction: row;
       align-items: center;
       overflow: auto;
 
     }
+    .section_imagenes::-webkit-scrollbar{
+      height: 7px;
+      width: 7px;
+    }
+    .section_imagenes::-webkit-scrollbar-thumb{
+      background: $clr-primario;
+    }
+
     .imgUnisex img {
       width: 50%;
     }

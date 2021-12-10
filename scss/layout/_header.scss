@@ -47,3 +47,18 @@ header {
     }
   }
 }
+@media (min-width: 1024px) {
+  header {
+    .header {
+      &_logo {
+        margin: 2rem;
+        height: 70px;
+      }
+      &_nav {
+        ul {
+          word-spacing: 60px;
+        }
+      }
+    }
+  }
+}

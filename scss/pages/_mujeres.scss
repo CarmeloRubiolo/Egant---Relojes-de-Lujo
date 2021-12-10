@@ -16,8 +16,17 @@ section {
         display: flex;
         flex-direction: row;
         align-items: center;
-        overflow: auto;
       }
+      .section_imagenes::-webkit-scrollbar{
+        height: 7px;
+        width: 7px;
+        
+      }
+      .section_imagenes::-webkit-scrollbar-thumb{
+        background: $clr-primario;
+        border-radius: 5px;
+      }
+  
       .imgUnisex img {
         width: 50%;
       }
